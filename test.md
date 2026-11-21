@@ -13,6 +13,9 @@ git使用流程
 有本地分支和远程分支
 如果代码开发了一个独立且复杂的功能需要分支，之后合并
 
+密钥
+ssh-keygen -t rsa -b 4096 -C "你的邮箱地址"
+
 git init
 
 git remote add origin <仓库的地址>
