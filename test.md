@@ -15,6 +15,8 @@ git使用流程
 
 密钥
 ssh-keygen -t rsa -b 4096 -C "你的邮箱地址"
+ssh-keyscan -H gitee.com | Out-File -Append $env:USERPROFILE\.ssh\known_hosts
+
 
 git init
 
