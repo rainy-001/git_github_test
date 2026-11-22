@@ -49,3 +49,4 @@ git remote set-url --add --push origin git@gitee.com:Rain0x/git_gitee_test.git
 
 # 2. 把 GitHub 的推送地址也绑定给 origin
 git remote set-url --add --push origin git@github.com:rainy-001/git_github_test.git
+12323423...
