@@ -36,6 +36,7 @@ gitignore.txt
 协作
 先git pull
 再git push
+不同步文件远程仓库会拒绝push
 
 添加远程库时
 当先gitee用ssh git remote add origin git@gitee.com:Rain0x/git_gitee_test.git 之后添加了一个标签叫origin的主远程
