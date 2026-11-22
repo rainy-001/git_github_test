@@ -37,3 +37,14 @@ gitignore.txt
 先git pull
 再git push
 
+添加远程库时
+当先gitee用ssh git remote add origin git@gitee.com:Rain0x/git_gitee_test.git 之后添加了一个标签叫origin的主远程
+github远程就不能设置成origin（会显示已存在remote origin already exists）
+git remote add gittest2 git@github.com:...
+github使用ssh git remote set-url gittest2 git@github.com:rainy-001/git_github_test.git （修改https地址为ssh地址）      
+
+# 1. 把 Gitee 的推送地址绑定给 origin
+git remote set-url --add --push origin git@gitee.com:Rain0x/git_gitee_test.git
+
+# 2. 把 GitHub 的推送地址也绑定给 origin
+git remote set-url --add --push origin git@github.com:rainy-001/git_github_test.git
