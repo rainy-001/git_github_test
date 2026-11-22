@@ -15,9 +15,24 @@ git使用流程
 
 密钥
 ssh-keygen -t rsa -b 4096 -C "你的邮箱地址"
-ssh-keyscan -H gitee.com | Out-File -Append $env:USERPROFILE\.ssh\known_hosts
+密钥会存放在C:\Users\Rain0x\.ssh
+带pub的为公钥，在远程仓库配置
+另一个为私钥，只存在于这台电脑上
+git remote add origin git@gitee.com:Rain0x/git_gitee_test.git(ssh格式的链接)
 
 
 git init
-
 git remote add origin <仓库的地址>
+git config core.ignorecase false 大小写敏感
+
+
+gitignore.txt
+/开头表示和gitignore.txt同目录下的文件夹
+*任意字符数量通配符
+**任意文件夹通配符
+？单字符通配符
+！特殊不忽略的某个文件
+
+协作
+先git pull
+再git push
