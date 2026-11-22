@@ -49,3 +49,18 @@ git remote set-url --add --push origin git@gitee.com:Rain0x/git_gitee_test.git
 
 # 2. 把 GitHub 的推送地址也绑定给 origin
 git remote set-url --add --push origin git@github.com:rainy-001/git_github_test.git
+
+
+版本回滚
+git reset --soft HEAD~1（提交哈希值）  # 撤销上一次 commit，代码保留在暂存区
+git reset --hard HEAD~1  # 彻底撤销上一次 commit，代码丢失（危险！）
+
+撤销远程提交
+git revert <commit哈希值> # 生成一个反向提交，安全抵消之前的代码
+
+代码协作
+git branch dev       # 创建 dev 分支
+git switch dev       # 切换到 dev 分支（推荐，比 checkout 好理解）
+git switch -c dev    # 创建并直接切换
+fork是不是协作者的情况，是协作者的话可以直接push
+管理者pull request（审查代码提交）决定是否合并
