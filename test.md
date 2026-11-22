@@ -49,6 +49,7 @@ git remote set-url --add --push origin git@gitee.com:Rain0x/git_gitee_test.git
 
 # 2. 把 GitHub 的推送地址也绑定给 origin
 git remote set-url --add --push origin git@github.com:rainy-001/git_github_test.git
+<<<<<<< HEAD
 
 
 版本回滚
@@ -64,3 +65,6 @@ git switch dev       # 切换到 dev 分支（推荐，比 checkout 好理解）
 git switch -c dev    # 创建并直接切换
 fork是不是协作者的情况，是协作者的话可以直接push
 管理者pull request（审查代码提交）决定是否合并
+=======
+12323423...
+>>>>>>> 5b6d514e21baa62fd3862af5fa3266af54aae48e
